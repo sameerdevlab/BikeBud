@@ -1,4 +1,3 @@
-import React from 'react';
 import TestimonialCard from '../components/TestimonialCard';
 
 const TestimonialsSection: React.FC = () => {

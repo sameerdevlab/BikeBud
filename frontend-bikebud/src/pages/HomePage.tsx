@@ -1,4 +1,3 @@
-import React from 'react';
 import HeroSection from '../sections/HeroSection';
 import FeaturesSection from '../sections/FeaturesSection';
 import TestimonialsSection from '../sections/TestimonialsSection';

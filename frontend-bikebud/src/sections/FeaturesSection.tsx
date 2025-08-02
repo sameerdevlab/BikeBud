@@ -1,4 +1,3 @@
-import React from 'react';
 import { Shield, Zap, Droplets, Weight } from 'lucide-react';
 import FeatureCard from '../components/FeatureCard';
 

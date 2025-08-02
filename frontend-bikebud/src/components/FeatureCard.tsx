@@ -1,4 +1,3 @@
-import React from 'react';
 import { DivideIcon } from 'lucide-react';
 import type { FC } from 'react';
 
