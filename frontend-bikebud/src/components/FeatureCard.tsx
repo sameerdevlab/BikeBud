@@ -1,4 +1,3 @@
-import { DivideIcon } from 'lucide-react';
 import type { FC } from 'react';
 
 interface FeatureCardProps {
