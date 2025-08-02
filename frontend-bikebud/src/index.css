@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Sora', sans-serif;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 dark:bg-gray-900/10 backdrop-blur-xl border border-white/20 dark:border-gray-700/20;
+  }
+  
+  .glass-card {
+    @apply glass rounded-3xl shadow-2xl hover:shadow-neon-purple/20 hover:shadow-2xl;
+  }
+  
+    .animated-gradient {
+    background: radial-gradient(ellipse at center, #1a1a2e 0%, #16213e 25%, #7c3aed 60%, #ff4ecd 100%);
+    background-size: 200% 200%;
+    animation: gradient 20s ease infinite;
+  }
+  
+  .dark-gradient {
+    background: radial-gradient(ellipse at center, #1a1a2e 0%, #16213e 25%, #7c3aed 60%, #ff4ecd 100%);
+    background-size: 200% 200%;
+    animation: gradient 20s ease infinite;
+  }
+  
+  .glowing-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.6;
+    animation: float-orb 8s ease-in-out infinite;
+    pointer-events: none;
+  }
+  
+  .orb-cyan-blue {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #00eaff 0%, #06b6d4 30%, transparent 70%);
+  }
+  
+  .orb-magenta-purple {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, #ff4ecd 0%, #ec4899 25%, #7c3aed 50%, transparent 70%);
+  }
+
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-text-gold via-text-orange to-text-lime bg-clip-text text-transparent;
+  }
+  
+  .glow-button {
+    @apply relative overflow-hidden;
+  }
+  
+  .glow-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+  }
+  
+  .glow-button:hover::before {
+    left: 100%;
+  }
+  
+  .card-tilt {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-tilt:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg) translateZ(20px);
+  }
+  
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+  }
+  
+  .scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-orb {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  33% { transform: translateY(-30px) translateX(20px); }
+  66% { transform: translateY(20px) translateX(-15px); }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-neon-purple to-neon-pink rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply from-neon-pink to-neon-cyan;
+}
