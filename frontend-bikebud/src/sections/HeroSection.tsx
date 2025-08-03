@@ -7,34 +7,62 @@ const HeroSection: React.FC = () => {
       id: 'reflective-tank-bag',
       imageSrc: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
       altText: 'Reflective Tank Bag',
-      title: 'Reflective Tank Bag',
-      price: 599,
+      title: 'BikeBud ONE-FIT',
+      price: 699,
       originalPrice: 899,
-      discount: '33% OFF',
+      discount: '22% OFF',
       features: [
         'Premium water-resistant material',
         '360° reflective safety strips',
-        'Universal fit for all bike models',
-        '15L storage capacity'
+        'Universal fit for all bike models (splendor, glamor, shine, unicorn, and similar tanks)',
       ],
-      bookingUrl: 'https://forms.google.com'
+      bookingUrl: 'https://forms.gle/gWG9WWMhCrtxpcCh6'
     },
     {
       id: 'reflective-tank-bag',
       imageSrc: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
       altText: 'Reflective Tank Bag',
-      title: 'Reflective Tank Bag',
-      price: 599,
-      originalPrice: 899,
-      discount: '33% OFF',
+      title: 'BikeBud RE-BASE',
+      price: 799,
+      originalPrice: 999,
+      discount: '20% OFF',
       features: [
         'Premium water-resistant material',
         '360° reflective safety strips',
-        'Universal fit for all bike models',
-        '15L storage capacity'
+        'Fit for Royal Enfield bike models',
       ],
-      bookingUrl: 'https://forms.google.com'
-    }
+      bookingUrl: 'https://forms.gle/8QQYhQSHZGi3Uojr8'
+    },
+    {
+      id: 'reflective-tank-bag',
+      imageSrc: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+      altText: 'Reflective Tank Bag',
+      title: 'BikeBud RE-PRIME',
+      price: 1199,
+      originalPrice: 1499,
+      discount: '20% OFF',
+      features: [
+        'Premium water-resistant material',
+        '360° reflective safety strips',
+        'Fit for Royal Enfield bike models',
+      ],
+      bookingUrl: 'https://forms.gle/6FAH5ymnoXUPV8Vj6'
+    },
+    {
+      id: 'reflective-tank-bag',
+      imageSrc: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+      altText: 'Reflective Tank Bag',
+      title: 'BikeBud RE-ELITE',
+      price: 1499,
+      originalPrice: 1999,
+      discount: '25% OFF',
+      features: [
+        'Premium water-resistant material',
+        '360° reflective safety strips',
+        'Fit for Royal Enfield bike models',
+      ],
+      bookingUrl: 'https://forms.gle/DqAy1TAqbHzsvShMA'
+    },
   ];
 
   return (
@@ -47,7 +75,7 @@ const HeroSection: React.FC = () => {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 m-2">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 m-2">
         <div className="text-center animate-fade-in max-w-3xl mx-auto">
           <h1 className="text-xl sm:text-2xl md:text-4xl font-black font-space mb-4 sm:mb-6 leading-tight px-2">
             No More Handle <span className="text-gradient animate-glow">Plastic Bags</span>.

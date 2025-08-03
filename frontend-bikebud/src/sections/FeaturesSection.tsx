@@ -26,7 +26,7 @@ const FeaturesSection: React.FC = () => {
     {
       icon: Droplets,
       title: "Water-Resistant",
-      description: "Weatherproof design protects your belongings from rain",
+      description: "Weatherproof design resists water",
       gradientFrom: "from-neon-cyan",
       gradientTo: "to-neon-green",
       hoverGradient: "hover:bg-gradient-to-br hover:from-neon-cyan/10 hover:to-transparent",
@@ -46,7 +46,7 @@ const FeaturesSection: React.FC = () => {
   ];
 
   return (
-    <section id="features" className="py-20 relative">
+    <section id="features" className="py-10 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 scroll-reveal">
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-black font-space text-white mb-3 sm:mb-4 px-2">
